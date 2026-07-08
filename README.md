@@ -130,6 +130,22 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+### 5. Deploy ke Streamlit Cloud
+
+Saat membuat app di Streamlit Cloud, pilih main file:
+
+```text
+streamlit_app.py
+```
+
+atau:
+
+```text
+app.py
+```
+
+Jangan pilih `web_app.py` sebagai main file Streamlit Cloud. File `web_app.py` adalah server lokal berbasis Python standard library. Jika terlanjur memilih `web_app.py`, versi terbaru sudah diberi fallback agar tetap mengarah ke UI Streamlit.
+
 ## API Docs
 
 Endpoint:

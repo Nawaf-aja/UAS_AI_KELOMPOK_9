@@ -167,4 +167,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    if "streamlit" in sys.modules:
+        import app  # noqa: F401
+    else:
+        main()
