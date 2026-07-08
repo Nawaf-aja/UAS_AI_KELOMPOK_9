@@ -1,0 +1,136 @@
+{
+  "dataset": {
+    "source_file": "complaints.csv.zip",
+    "source_api": null,
+    "processed_file": "data\\processed_banking_complaints.csv",
+    "dataset_strategy": "CFPB narratives mapped into balanced banking complaint categories",
+    "total_rows": 2800,
+    "train_rows": 2448,
+    "test_rows": 352,
+    "labels": [
+      "account_closure",
+      "account_management",
+      "card_dispute",
+      "credit_reporting",
+      "fees_interest",
+      "fraud_scam",
+      "loan_mortgage",
+      "payment_transfer"
+    ]
+  },
+  "models": {
+    "naive_bayes": {
+      "accuracy": 0.5938,
+      "macro_precision": 0.6683,
+      "macro_recall": 0.5938,
+      "macro_f1": 0.5913,
+      "per_class": {
+        "account_closure": {
+          "precision": 0.9231,
+          "recall": 0.2727,
+          "f1_score": 0.4211,
+          "support": 44
+        },
+        "account_management": {
+          "precision": 0.4921,
+          "recall": 0.7045,
+          "f1_score": 0.5794,
+          "support": 44
+        },
+        "card_dispute": {
+          "precision": 0.5682,
+          "recall": 0.5682,
+          "f1_score": 0.5682,
+          "support": 44
+        },
+        "credit_reporting": {
+          "precision": 0.7234,
+          "recall": 0.7727,
+          "f1_score": 0.7473,
+          "support": 44
+        },
+        "fees_interest": {
+          "precision": 0.8,
+          "recall": 0.5455,
+          "f1_score": 0.6486,
+          "support": 44
+        },
+        "fraud_scam": {
+          "precision": 0.7778,
+          "recall": 0.4773,
+          "f1_score": 0.5915,
+          "support": 44
+        },
+        "loan_mortgage": {
+          "precision": 0.6667,
+          "recall": 0.6364,
+          "f1_score": 0.6512,
+          "support": 44
+        },
+        "payment_transfer": {
+          "precision": 0.3953,
+          "recall": 0.7727,
+          "f1_score": 0.5231,
+          "support": 44
+        }
+      }
+    },
+    "logistic_regression": {
+      "accuracy": 0.6449,
+      "macro_precision": 0.7006,
+      "macro_recall": 0.6449,
+      "macro_f1": 0.6448,
+      "per_class": {
+        "account_closure": {
+          "precision": 0.8636,
+          "recall": 0.4318,
+          "f1_score": 0.5758,
+          "support": 44
+        },
+        "account_management": {
+          "precision": 0.5172,
+          "recall": 0.6818,
+          "f1_score": 0.5882,
+          "support": 44
+        },
+        "card_dispute": {
+          "precision": 0.6207,
+          "recall": 0.8182,
+          "f1_score": 0.7059,
+          "support": 44
+        },
+        "credit_reporting": {
+          "precision": 0.7556,
+          "recall": 0.7727,
+          "f1_score": 0.764,
+          "support": 44
+        },
+        "fees_interest": {
+          "precision": 0.8214,
+          "recall": 0.5227,
+          "f1_score": 0.6389,
+          "support": 44
+        },
+        "fraud_scam": {
+          "precision": 0.9167,
+          "recall": 0.5,
+          "f1_score": 0.6471,
+          "support": 44
+        },
+        "loan_mortgage": {
+          "precision": 0.6383,
+          "recall": 0.6818,
+          "f1_score": 0.6593,
+          "support": 44
+        },
+        "payment_transfer": {
+          "precision": 0.4714,
+          "recall": 0.75,
+          "f1_score": 0.5789,
+          "support": 44
+        }
+      }
+    }
+  },
+  "best_model": "logistic_regression"
+}

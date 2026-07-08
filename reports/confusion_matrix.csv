@@ -1,0 +1,9 @@
+actual,account_closure,account_management,card_dispute,credit_reporting,fees_interest,fraud_scam,loan_mortgage,payment_transfer
+account_closure,19,7,5,2,0,0,2,9
+account_management,2,30,0,1,1,0,3,7
+card_dispute,0,2,36,1,1,0,0,4
+credit_reporting,0,0,5,34,0,0,5,0
+fees_interest,0,5,3,1,23,2,2,8
+fraud_scam,0,3,5,4,0,22,4,6
+loan_mortgage,0,3,4,2,2,0,30,3
+payment_transfer,1,8,0,0,1,0,1,33
